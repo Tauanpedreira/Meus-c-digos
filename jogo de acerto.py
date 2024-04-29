@@ -1,10 +1,10 @@
 import time
 import random
-pergunta=str(input('olá! pronto para iniciar um game divertido comigo ou quer 1 mn?(S/N): ').upper())
+pergunta=str(input('\033[34molá! pronto para iniciar um game divertido comigo ou quer 1 mn?(S/N): \033[m').upper())
 if pergunta=='S':
-    print('ok! vamos iniciar!!')
+    print('\033[34mok! vamos iniciar!!\033[m')
     time.sleep(1)
-    print('pensei ne um número de 0 a 5... tente adivinhar!!')
+    print('\033[34mpensei ne um número de 0 a 5... tente adivinhar!!\033[m')
     num=random.randint(0,5)
     player=int(input('qual número você acha que o computador pensou? '))
     if player==num:
@@ -12,11 +12,11 @@ if pergunta=='S':
     else:
         print('\033[31mque pena... esperava mais de você!\033[m')
 if pergunta=='N':
-    print('ok! te darei 1 minuto! se aprece!!')
+    print('\033[32mok! te darei 1 minuto! se aprece!!\033[m')
     time.sleep(60)
-    print('ok! acabou o seu tempo, vamos iniciar!!')
+    print('\033[31mok! acabou o seu tempo, vamos iniciar!!\033[m')
     time.sleep(1)
-    print('pensei ne um número de 0 a 5... tente adivinhar!!')
+    print('\033[34mpensei ne um número de 0 a 5... tente adivinhar!!\033[m')
     num2=(random.randint(0,5))
     player2=int(input('qual número você acha que o computador pensou? '))
     if player2==num2:
