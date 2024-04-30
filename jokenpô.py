@@ -27,4 +27,6 @@ if sn=='s':
         print('\033[32mparabéns você venceu!!\033[m')
     else:
         print('\033[33mEmpate.\033[m')
+elif sn=='n':
+    print('\033[31mpoxa... que pena :(\033[m')
 print('\033[32mFim\033[m')
